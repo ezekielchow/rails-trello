@@ -68,4 +68,5 @@ gem 'jquery-rails'
 gem 'webpacker', '~> 3.5'
 gem 'mysql2'
 gem 'simple_token_authentication', '~> 1.15.1'
-gem "passenger"
+gem 'passenger'
+gem 'pg'
