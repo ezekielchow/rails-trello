@@ -1,4 +1,4 @@
-class ListsController < ApplicationController
+class ListsController < AuthenticatedController
   before_action :set_list, only: [:show, :edit, :update, :destroy, :move]
 
   # GET /lists

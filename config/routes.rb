@@ -11,5 +11,14 @@ Rails.application.routes.draw do
     end
   end
   
+  namespace :api do
+    namespace :app do
+      namespace :v1 do
+        post 'login', to: 'mobile#login'
+      end
+    end
+  end
+
+
   root to: 'lists#index'
 end
