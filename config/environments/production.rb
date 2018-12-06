@@ -47,7 +47,8 @@ Rails.application.configure do
   # config.action_cable.mount_path = nil
   # config.action_cable.url = 'wss://example.com/cable'
   # config.action_cable.allowed_request_origins = [ 'http://example.com', /http:\/\/example.*/ ]
-  config.action_cable.url = 'wss://myurl.herokuapp.com'
+  config.middleware.use ListActionCable
+  config.action_cable.url = 'wss://rails-trello.herokuapp.com'
   config.action_cable.allowed_request_origins = [
     'https://rails-trello.herokuapp.com/', '/http://rails-trello.herokuapp.com.*/']
 
