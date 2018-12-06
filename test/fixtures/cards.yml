@@ -1,11 +1,16 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  list: one
-  name: MyString
+  list: Pending
+  name: Do the dishes
   position: 1
 
 two:
-  list: two
-  name: MyString
+  list: Pending
+  name: Wash the plates
+  position: 2
+
+three:
+  list: Done
+  name: Throw the plates
   position: 1
