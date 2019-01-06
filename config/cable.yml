@@ -4,7 +4,10 @@ development:
 test:
   adapter: async
 
-production:
-  adapter: redis
-  url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
-  channel_prefix: trello-with-vue_production
+production: &production  
+  :url:  redis://h:pfff7c649e70fc40c5f56ebb5baeaf202a611d1dcbc64cef2e7f59cf0d19dcc5f@ec2-34-234-124-166.compute-1.amazonaws.com:14599
+  :host: ec2-34-234-124-166.compute-1.amazonaws.com
+  :port: 14599
+  :password: pfff7c649e70fc40c5f56ebb5baeaf202a611d1dcbc64cef2e7f59cf0d19dcc5f
+  :inline: true
+  :timeout: 1
